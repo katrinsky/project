@@ -17,6 +17,19 @@
     <title>Inhale. Exhale.</title>
 </head>
 <body>
+
+    <svg display="none">
+        <symbol id="menu" viewBox="0 0 50 50">
+            <path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"/>
+        </symbol>
+    </svg>
+    
+    <svg display="none">
+        <symbol id="close" viewBox="0 0 50 50">
+            <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/>
+    </svg>
+
+
 <div class="top">
     <p>
         Free shipping. Simple returns. Holiday shopping has never been easier.
@@ -24,8 +37,9 @@
     <a href="#">Shop now.</a>
 </div>
 <div class="wraper">
-    <nav>
-        <ul>
+
+    <nav class="nav">
+        <ul class="menu-container" data-menu>
             <li><i class="fa-brands fa-google"></i></li>
             <li><a href="#">Phones</a></li>
             <li><a href="#">Earbuds</a></li>
@@ -33,18 +47,30 @@
             <li><a href="#">Smart Home</a></li>
             <li><a href="#">Laptops</a></li>
             <li><a href="#">Accessories</a></li>
-            <li><a href="#">Subscription</a></li>
+            <li><a href="#">Subscriptions</a></li>
             <li><a href="#">Offers</a></li>
         </ul>
-            <ul>
-                <li>     <a href="#"><i class="fa-solid fa-magnifying-glass"></i> </a> </li>
-                <li>     <a href="#"><i class="fa-solid fa-circle-question"></i></a> </li>
-                <li>     <a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li>     <a href="#"><i class="fa-solid fa-user"></i></a></li>
-            </ul>
+
+        <ul>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> </a> </li>
+            <li><a href="#"><i class="fa-solid fa-circle-question"></i></a> </li>
+            <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            <li class="link-user"><a href="#"><i class="fa-solid fa-user"></i></a></li>
+        </ul>
+
+
+        <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+            <svg width="20" height="20" aria-label="Перемикач мобільного меню">
+
+                <use class="icon-cross" xlink:href="#close"></use>
+                <use class="icon-menu" xlink:href="#menu"></use>
+
+            </svg>
+        </button>
        
     </nav>
-    <main>
+
+<main>
     <div class="main-img">
         <div class="text-content">
             <h1>Inhale. Gift. Exhale.</h1>
@@ -54,41 +80,57 @@
         </div>
     </div>
     <div class="container">
+
     <div class="gadgets">
+
         <p>Sneak a peek. For you or for them.</p>
+
         <div class="device-container">
+
             <div class="device">
-              <img src="./img/watch.png" alt="watch">
-              <p>Google Pixel Watch</p>
-              <a href="https://blog.google/products/pixel/google-pixel-watch/" class="device-link" target="_blank" rel="noopener noreferrer"></a>
+                <img src="./img/watch.png" alt="watch">
+                <p>Google Pixel Watch</p>
+                <a href="https://blog.google/products/pixel/google-pixel-watch/" class="device-link" target="_blank" rel="noopener noreferrer"></a>
             </div>
+      
+      
             <div class="device">
-              <img src="./img/pixel7pro.png" alt="pixel7-pro">
-              <p>Pixel 7 Pro</p>
-              <a href="https://blog.google/products/pixel/pixel-7-pixel-7-pro/" class="device-link" target="_blank" rel="noopener noreferrer"></a>
+                <img src="./img/pixel7pro.png" alt="pixel7-pro">
+                <p>Pixel 7 Pro</p>
+                <a href="https://blog.google/products/pixel/pixel-7-pixel-7-pro/" class="device-link" target="_blank" rel="noopener noreferrer"></a>
             </div>
+
+
             <div class="device">
-              <img src="./img/pixel7.png" alt="pixel-7">
-              <p>Pixel 7</p>
-              <a href="https://blog.google/products/pixel/pixel-7-pixel-7-pro/" class="device-link" target="_blank" rel="noopener noreferrer"></a>
+                <img src="./img/pixel7.png" alt="pixel-7">
+                <p>Pixel 7</p>
+                <a href="https://blog.google/products/pixel/pixel-7-pixel-7-pro/" class="device-link" target="_blank" rel="noopener noreferrer"></a>
             </div>
+      
+      
             <div class="device">
-              <img src="./img/pixelbuds.png" alt="pixel-buds">
-              <p>Pixel Buds Pro</p>
-              <a href="https://blog.google/products/pixel/pixel-buds-pro-io-2022/" class="device-link" target="_blank" rel="noopener noreferrer"></a>
+                <img src="./img/pixelbuds.png" alt="pixel-buds">
+                <p>Pixel Buds Pro</p>
+                <a href="https://blog.google/products/pixel/pixel-buds-pro-io-2022/" class="device-link" target="_blank" rel="noopener noreferrer"></a>
             </div>
+
+
             <div class="device">
                 <img src="./img/nest-doorbells.png" alt="nest-doorbells">
                 <p>Nest Doorbells</p>
                 <a href="https://blog.google/products/google-nest/new-google-nest-latest-cams-and-doorbells-are-here/" class="device-link" target="_blank" rel="noopener noreferrer"></a>
             </div>
+    
+    
             <div class="device">
-            <img src="./img/nest-wifi.png" alt="nest-wifi">
-            <p>Nest Wifi Pro</p>
-            <a href="https://blog.google/products/google-nest/google-nest-wifi-pro-6e/" class="device-link" target="_blank" rel="noopener noreferrer"></a>
+                <img src="./img/nest-wifi.png" alt="nest-wifi">
+                <p>Nest Wifi Pro</p>
+                <a href="https://blog.google/products/google-nest/google-nest-wifi-pro-6e/" class="device-link" target="_blank" rel="noopener noreferrer"></a>
             </div>
+
         </div>
-        <hr>
+
+        <hr class="first-line">
     </div>
     
         <div class="img-text-section">
@@ -181,7 +223,7 @@
     </div>
 </main>
 <footer>
-    <hr>
+    <hr class="second-line">
         <div class="footer-section">
             <ul>
                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
@@ -204,4 +246,5 @@
 </body>
 <script src="https://kit.fontawesome.com/6e172bff61.js" crossorigin="anonymous"></script>
 <script src="script.js"></script>
+<script src="menu.js"></script>
 </html>
