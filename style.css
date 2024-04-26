@@ -293,6 +293,7 @@ h2 {
 
 .small-btn:hover {
   background-color: #f4f8bd;
+  text-decoration: none;
 }
 
 .big-plate {
