@@ -145,11 +145,11 @@ p {
   padding: 0.5em 1em;
   margin-top: 1.3em;
   display: inline-block;
-  border: 1px solid #3c4043; 
+  border: 1px solid transparent; 
 }
 
 .button.simple {
-  border: 1px solid #3c4043;
+  border: 1px solid transparent;
 }
 
 a.button, a.button.simple {
@@ -157,7 +157,7 @@ a.button, a.button.simple {
 }
 
 .button:hover {
-  border: 2px solid #3c4043; 
+  border: 1px solid #3c4043; 
 }
 
 .gadgets {
