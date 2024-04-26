@@ -97,21 +97,35 @@ ul > li {
   margin-right: 1.25em;
 }
 
+ul li a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+ul li a:hover {
+  transform: scale(1.2);
+}
+
 .menu-button {
   display: none;
 }
+
 .main-img {
   background-image: url("./img/main-img.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
   height: 37.5em;
   padding-top: 10.25rem;
 }
+
 .text-content {
   margin-left: 8rem;
   width: 22rem;
 }
+
 h1 {
   letter-spacing: 2px;
   font-size: 3.5rem;
@@ -130,11 +144,11 @@ p {
   padding: 0.5em 1em;
   margin-top: 1.3em;
   display: inline-block;
-  border: none; 
-  outline: none; 
+  border: 1px solid #3c4043; 
 }
-.simple {
-  border: none;
+
+.button.simple {
+  border: 1px solid #3c4043;
 }
 
 a.button, a.button.simple {
@@ -209,6 +223,7 @@ hr {
 
 .img-text-section {
   display: flex;
+  max-width: 1600px;
 }
 .img-text-section > img {
   width: 44.1rem;
@@ -234,6 +249,11 @@ hr {
 .text-about a {
   color:#1967D2;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.text-about a:hover {
+  color: #850487;
 }
 
 h3 {
@@ -266,6 +286,12 @@ h2 {
   border: 2px solid #5f6368;
   border-radius: 4px;
   padding: 0 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.small-btn:hover {
+  background-color: #f4f8bd;
 }
 
 .big-plate {
@@ -302,6 +328,11 @@ h2 {
 .category-plate a {
   text-decoration: none;
   color: #1967D2;
+  transition: color 0.3s ease;
+}
+
+.category-plate a:hover {
+  color: #850487;
 }
 
 .second-line {
@@ -319,6 +350,15 @@ footer {
   justify-content: space-between;
   padding-right: 1rem;
 }
+
+.footer-section a i {
+  transition: transform 0.3s ease;
+}
+
+.footer-section a:hover i {
+  transform: scale(1.2);
+}
+
 .footer-section > ul {
   display: flex;
 }
@@ -327,7 +367,13 @@ footer {
   font-size: 0.68rem;
   display: flex;
   align-items: center;
+  transition: color 0.3s ease;
 }
+
+.footer-list:hover {
+  color: #1967D2;
+}
+
 .footer-list img {
   width: 24px;
   height: 18px;
