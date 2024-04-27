@@ -646,13 +646,25 @@ footer {
   }
 
   .footer-section {
-    padding: 0;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .footer-section ul {
+.footer-section ul {
+    list-style: none;
     padding: 0;
-  }
+}
+
+.footer-section ul:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.footer-section ul:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+}
 }
